@@ -1,0 +1,20 @@
+<div class="frm-container">
+  <div 
+    class="div-perfil flex flex-col items-center text-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+      <img class="object-cover mb-4"
+        src="https://randomuser.me/api/portraits/men/{{psicologo.Id + 5}}.jpg" alt="">
+      <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{{psicologo.Nombre}}</h5>
+      <h4 class="mb-3 text-xl font-bold text-gray-700 dark:text-gray-400">{{psicologo.Titulo}}</h4>
+      <p class="mb-3 font-bold text-gray-700 dark:text-gray-400">{{psicologo.Universidad}}</p><br>
+      <h1 class="mb-3 font-bold text-gray-700 dark:text-gray-400">Correo: {{psicologo.Email}}</h1>
+      <p class="mb-3 font-bold text-gray-700 dark:text-gray-400">Teléfono: {{psicologo.Telefono}}</p>
+      <p class="mb-3 font-bold text-gray-700 dark:text-gray-400">Ciudad: {{psicologo.Ciudad}}</p>
+    </div>
+  </div>
+  <button type="submit"
+    routerLink="/"
+    class="rounded-md bg-gray-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">
+      Atras
+    </button>   
+</div>
